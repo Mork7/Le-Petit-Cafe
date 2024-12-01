@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Le Petit Café</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body class="bg-white font-sans leading-normal tracking-normal">
+    <!-- Navbar -->
+    <header class="bg-black text-white shadow-md fixed w-full z-10 top-0">
+      <div class="container mx-auto flex justify-between items-center p-4">
+        <a href="#" class="text-2xl font-bold text-[#d4af37]">Le Petit Café</a>
+        <nav>
+          <ul class="flex space-x-6">
+            <li>
+              <a
+                href="#about"
+                class="font-semibold text-[#d4af37] hover:underline"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                href="#menu"
+                class="font-semibold text-[#d4af37] hover:underline"
+                >Menu</a
+              >
+            </li>
+            <li>
+              <a
+                href="#contact"
+                class="font-semibold text-[#d4af37] hover:underline"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section
+      class="bg-cover bg-center h-screen"
+      style="background-image: url('./bg.avif')"
+    >
+      <div
+        class="h-full flex flex-col items-center justify-center text-center px-4"
+      >
+        <h1 class="text-5xl font-bold mb-4 text-yellow-400">
+          Welcome to Riverside's Newest Coffee Shop
+        </h1>
+        <p class="text-white text-lg font-semibold">
+          Pastries, coffee, and more. Come in and enjoy our cozy atmosphere.
+        </p>
+        <a
+          href="#menu"
+          class="mt-6 px-6 py-3 rounded shadow font-semibold bg-[#d4af37] text-black hover:bg-[#f1c453]"
+          >Explore Our Menu</a
+        >
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="container mx-auto py-16 px-6 text-center">
+      <h2 class="text-4xl font-bold mb-6 text-[#d4af37]">About Us</h2>
+      <p class="text-gray-700 text-lg max-w-3xl mx-auto">
+        Welcome to Le Petit Café, Riverside Windsor's newest hidden gem! Opened
+        just a few months ago, we are a family-owned café dedicated to serving
+        the finest pastries and coffee in town. Nestled in the heart of the
+        Riverside community, our cozy atmosphere provides the perfect escape to
+        unwind, connect, or simply indulge in a little treat.
+      </p>
+      <br />
+      <p class="text-gray-700 text-lg max-w-3xl mx-auto">
+        At Le Petit Café, we believe in creating moments of joy, one cup and one
+        pastry at a time. Step inside, and you'll find a quaint, welcoming
+        ambiance that feels like home. Whether you're here for a morning
+        pick-me-up or an afternoon break, we're here to make your visit special.
+      </p>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="bg-gray-100 py-16">
+      <div class="container mx-auto text-center">
+        <h2 class="text-4xl font-bold mb-12 text-[#d4af37]">Our Menu</h2>
+        <button
+          class="px-6 py-3 rounded shadow font-semibold mb-8 bg-[#d4af37] text-black hover:bg-[#f1c453]"
+        >
+          Download
+        </button>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Menu Item 1 -->
+          <div class="bg-white p-6 rounded shadow-lg">
+            <img
+              src="/cake.jpg"
+              alt="Dish"
+              class="rounded w-full mb-4 h-48 object-cover"
+            />
+            <h3 class="text-xl font-bold mb-2 text-[#d4af37]">Cheesecake</h3>
+            <p class="text-gray-600">
+              Freshly made cheesecake with creamy something idk.
+            </p>
+            <p class="font-bold mt-2 text-[#a78028]">$8.99</p>
+          </div>
+          <!-- Menu Item 2 -->
+          <div class="bg-white p-6 rounded shadow-lg">
+            <img
+              src="/coffee.jpg"
+              alt="Dish"
+              class="rounded w-full mb-4 h-48 object-cover"
+            />
+            <h3 class="text-xl font-bold mb-2 text-[#d4af37]">Cup of Coffee</h3>
+            <p class="text-gray-600">
+              Perfectly roasted coffee beans brewed to perfection.
+            </p>
+            <p class="font-bold mt-2 text-[#a78028]">$3.99</p>
+          </div>
+          <!-- Menu Item 3 -->
+          <div class="bg-white p-6 rounded shadow-lg">
+            <img
+              src="/croissants.webp"
+              alt="Dish"
+              class="rounded w-full mb-4 h-48 object-cover"
+            />
+            <h3 class="text-xl font-bold mb-2 text-[#d4af37]">
+              Croissant Sandwich
+            </h3>
+            <p class="text-gray-600">
+              Freshly baked croissant with your choice of filling.
+            </p>
+            <p class="font-bold mt-2 text-[#a78028]">$5.99</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-gray-200 text-black py-16 px-6">
+      <div class="container mx-auto">
+        <h2 class="text-4xl font-bold text-center mb-8 text-[#d4af37]">
+          Contact Us
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 text-center">
+          <!-- Location -->
+          <div class="shadow-lg py-3">
+            <h3 class="text-2xl font-bold mb-2 text-[#a78028]">Location</h3>
+            <p class="text-black">822 St Rose Ave, Windsor, ON N8S 1X3</p>
+          </div>
+          <!-- Phone -->
+          <div class="shadow-lg py-3">
+            <h3 class="text-2xl font-bold mb-2 text-[#a78028]">Phone</h3>
+            <p class="text-black">
+              <a
+                href="tel:+12266741140"
+                class="text-black hover:underline hover:text-[#d4af37]"
+                >226-674-1140</a
+              >
+            </p>
+          </div>
+          <!-- Hours -->
+          <div class="shadow-lg py-3">
+            <h3 class="text-2xl font-bold mb-2 text-[#a78028]">Hours</h3>
+            <p class="text-black">Tuesday - Sunday: 8:00 AM - 6:00 PM</p>
+          </div>
+          <!-- Socials -->
+          <div class="shadow-lg py-3">
+            <h3 class="text-2xl font-bold mb-2 text-[#a78028]">Socials</h3>
+            <div class="flex justify-center space-x-2 text-xl">
+              <a
+                href="https://www.instagram.com/lepetitcafe.inc/"
+                class="fa fa-instagram"
+                target="_blank"
+              >
+              </a>
+              <a
+                href="https://www.facebook.com/p/Le-Petit-Caf%C3%A9-61565781032442/"
+                class="fa fa-facebook"
+                target="_blank"
+              ></a>
+              <a
+                href="mailto:lepetitcafe.inc@outlook.com"
+                class="fa fa-envelope"
+                target="_blank"
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-6">
+      <div class="container lex mx-auto text-center text-[#d4af37]">
+        <p class="text-lg">&copy; 2024 Le Petit Café. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
