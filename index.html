@@ -9,6 +9,12 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
   </head>
   <body class="bg-white font-sans leading-normal tracking-normal">
     <!-- Navbar -->
@@ -18,17 +24,14 @@
         <a href="#" class="text-2xl font-bold text-[#d4af37]">Le Petit Café</a>
 
         <!-- Hamburger Icon -->
-        <button
-          class="text-[#d4af37] md:hidden focus:outline-none"
-          id="menu-toggle"
-        >
+        <button class="text-[#d4af37] md:hidden focus:outline-none" id="toggle">
           <!-- Icon (You can replace this with a proper SVG/icon library) -->
           ☰
         </button>
 
         <!-- Navigation Links -->
         <nav
-          id="menu"
+          id="links"
           class="hidden md:flex flex-col md:flex-row md:items-center space-y-2 md:space-y-0 md:space-x-6"
         >
           <ul
@@ -221,11 +224,11 @@
   </body>
 
   <script>
-    const menuToggle = document.getElementById("menu-toggle");
-    const menu = document.getElementById("menu");
+    const navToggle = document.getElementById("toggle");
+    const links = document.getElementById("links");
 
-    menuToggle.addEventListener("click", () => {
-      menu.classList.toggle("hidden");
+    navToggle.addEventListener("click", () => {
+      links.classList.toggle("hidden");
     });
   </script>
 </html>
