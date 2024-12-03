@@ -14,9 +14,26 @@
     <!-- Navbar -->
     <header class="bg-black text-white shadow-md fixed w-full z-10 top-0">
       <div class="container mx-auto flex justify-between items-center p-4">
+        <!-- Brand Name -->
         <a href="#" class="text-2xl font-bold text-[#d4af37]">Le Petit Café</a>
-        <nav>
-          <ul class="flex space-x-6">
+
+        <!-- Hamburger Icon -->
+        <button
+          class="text-[#d4af37] md:hidden focus:outline-none"
+          id="menu-toggle"
+        >
+          <!-- Icon (You can replace this with a proper SVG/icon library) -->
+          ☰
+        </button>
+
+        <!-- Navigation Links -->
+        <nav
+          id="menu"
+          class="hidden md:flex flex-col md:flex-row md:items-center space-y-2 md:space-y-0 md:space-x-6"
+        >
+          <ul
+            class="flex flex-col md:flex-row md:space-x-6 space-y-2 md:space-y-0"
+          >
             <li>
               <a
                 href="#about"
@@ -88,11 +105,13 @@
     <section id="menu" class="bg-gray-100 py-16">
       <div class="container mx-auto text-center">
         <h2 class="text-4xl font-bold mb-12 text-[#d4af37]">Our Menu</h2>
-        <button
-          class="px-6 py-3 rounded shadow font-semibold mb-8 bg-[#d4af37] text-black hover:bg-[#f1c453]"
-        >
-          Download
-        </button>
+        <a href="/menu.jpg" download="sandwich-menu">
+          <button
+            class="px-6 py-3 rounded shadow font-semibold mb-8 bg-[#d4af37] text-black hover:bg-[#f1c453]"
+          >
+            Download
+          </button>
+        </a>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
           <!-- Menu Item 1 -->
           <div class="bg-white p-6 rounded shadow-lg">
@@ -200,4 +219,13 @@
       </div>
     </footer>
   </body>
+
+  <script>
+    const menuToggle = document.getElementById("menu-toggle");
+    const menu = document.getElementById("menu");
+
+    menuToggle.addEventListener("click", () => {
+      menu.classList.toggle("hidden");
+    });
+  </script>
 </html>
