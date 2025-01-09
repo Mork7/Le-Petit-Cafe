@@ -9,10 +9,19 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
 
     <style>
       html {
         scroll-behavior: smooth;
+      }
+
+      * {
+        font-family: "Playfair Display", serif;
+        font-weight: bolder;
       }
     </style>
   </head>
@@ -67,15 +76,31 @@
 
     <!-- Hero Section -->
     <section
+<<<<<<< HEAD
       class="bg-center h-[40rem] bg-cover md:h-screen md:mt-16"
       style="background-image: url('./happy-holidays.png')"
+=======
+      class="bg-cover bg-center h-screen"
+      style="background-image: url('./hero.jpg')"
+>>>>>>> def38c9 (change hero bg and add font)
     >
       <div
         class="h-full flex flex-col items-center justify-center text-center px-4"
       >
+<<<<<<< HEAD
         <!-- <p class="text-white text-lg font-semibold bg-[#d4af37] px-4 py-2 rounded bg-opacity-75">
           Pastries, coffee, and more. Come in and enjoy our cozy atmosphere.
         </p> -->
+=======
+        <div class="bg-gradient-to-br from-black p-6 md:p-8 rounded shadow-xl">
+          <h1 class="text-4xl sm:text-5xl font-bold mb-4 text-yellow-400">
+            Welcome to Riverside's Newest Café
+          </h1>
+          <p class="text-white text-lg font-semibold">
+            Pastries, coffee, and more. Come in and enjoy our cozy atmosphere.
+          </p>
+        </div>
+>>>>>>> def38c9 (change hero bg and add font)
         <a
           href="#menu"
           class="px-6 py-3 rounded shadow font-semibold bg-[#d4af37] text-black hover:bg-[#f1c453]"
@@ -85,7 +110,10 @@
     </section>
 
     <!-- About Section -->
-    <section id="about" class="container mx-auto py-16 px-6 text-center font-semibold">
+    <section
+      id="about"
+      class="container mx-auto py-16 px-6 text-center font-semibold"
+    >
       <h2 class="text-4xl font-bold mb-6 text-[#d4af37]">About Us</h2>
       <p class="text-gray-700 text-lg max-w-3xl mx-auto">
         Welcome to Le Petit Café, Riverside Windsor's newest hidden gem! Opened
@@ -122,7 +150,9 @@
               alt="Dish"
               class="rounded w-full mb-4 h-72 object-cover"
             />
-            <h3 class="text-xl font-bold mb-2 text-[#d4af37]">Tuna Petit Twist</h3>
+            <h3 class="text-xl font-bold mb-2 text-[#d4af37]">
+              Tuna Petit Twist
+            </h3>
             <p class="text-gray-600">
               Our spin on a traditional tuna sandwich.
             </p>
@@ -135,7 +165,9 @@
               alt="Dish"
               class="rounded w-full mb-4 h-72 object-cover"
             />
-            <h3 class="text-xl font-bold mb-2 text-[#d4af37]">House Blend Coffee</h3>
+            <h3 class="text-xl font-bold mb-2 text-[#d4af37]">
+              House Blend Coffee
+            </h3>
             <p class="text-gray-600">
               Perfectly roasted coffee beans brewed to perfection.
             </p>
@@ -162,7 +194,9 @@
               alt="Dish"
               class="rounded w-full mb-4 h-72 object-cover"
             />
-            <h3 class="text-xl font-bold mb-2 text-[#d4af37]">The Canadian Latté</h3>
+            <h3 class="text-xl font-bold mb-2 text-[#d4af37]">
+              The Canadian Latté
+            </h3>
             <p class="text-gray-600">
               A great way to start your day with a Canadian twist.
             </p>
@@ -175,10 +209,10 @@
               alt="Dish"
               class="rounded w-full mb-4 h-72 object-cover"
             />
-            <h3 class="text-xl font-bold mb-2 text-[#d4af37]">Specialty Croissants</h3>
-            <p class="text-gray-600">
-              Assorted specialty croissants.
-            </p>
+            <h3 class="text-xl font-bold mb-2 text-[#d4af37]">
+              Specialty Croissants
+            </h3>
+            <p class="text-gray-600">Assorted specialty croissants.</p>
             <p class="font-bold mt-2 text-[#a78028]">Starting at $6.50</p>
           </div>
           <!-- Menu Item 3 -->
@@ -197,12 +231,17 @@
             <p class="font-bold mt-2 text-[#a78028]">$12.95</p>
           </div>
         </div>
-        <p class="translate-y-8 font-semibold">*Now offering gift cards, perfect for the Holiday Season!</p>
+        <p class="translate-y-8 font-semibold">
+          <span class="glyphicon glyphicon-gift"></span>Now offering gift cards!
+        </p>
       </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="bg-gray-200 text-black py-16 px-6 font-semibold">
+    <section
+      id="contact"
+      class="bg-gray-200 text-black py-16 px-6 font-semibold"
+    >
       <div class="container mx-auto">
         <h2 class="text-4xl font-bold text-center mb-8 text-[#d4af37]">
           Contact Us
@@ -219,7 +258,7 @@
             <p class="text-black">
               <a
                 href="tel:+12266741140"
-                class="text-black hover:underline hover:text-[#d4af37]"
+                class="text-black hover:underline hover:text-[#d4af37] font-bold"
                 >226-674-1140</a
               >
             </p>
